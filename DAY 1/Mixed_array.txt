@@ -1,0 +1,10 @@
+// Code your design here
+module mixed_array;
+  bit [7:0] mem [2][4];
+  initial begin
+    foreach(mem[i,j])
+      mem[i][j]=i*4+j;
+    foreach(mem[i,j])
+      $display("mem[%0d][%0d]=%0d",i,j,mem[i][j]);
+  end
+endmodule

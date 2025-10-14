@@ -1,0 +1,9 @@
+module packed_array;
+  bit[3:0] nibble;
+  initial begin
+    nibble=4'b1010;
+    $display("nibble=%b",nibble);
+    $display("nibble[0]=%b",nibble[0]);
+    $display("nibble[3]=%b",nibble[3]);
+  end
+endmodule

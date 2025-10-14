@@ -1,0 +1,12 @@
+// Code your design here
+module dynamic_array;
+  int dyn_array[];
+  initial begin
+    dyn_array=new[5];
+    foreach(dyn_array[i])
+      dyn_array[i] = (i+1)*10;
+    $display("Dynamic Array Elements:");
+    foreach(dyn_array[i])
+      $display("dyn_array[%0d] = %0d", i, dyn_array[i]);
+  end
+endmodule
